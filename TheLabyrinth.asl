@@ -73,7 +73,7 @@ reset {
         return true;
     }
     if((vars.PlayerX >= 275 && vars.PlayerX <= 279 && vars.PlayerZ >= -208 && vars.PlayerZ <= -179 && vars.PlayerY <= 20)) {
-        return true;
+        return false;
     }
 }
 
@@ -82,6 +82,9 @@ start {
         if(vars.PlayerX >= 255 && vars.PlayerX <= 299 && vars.PlayerZ >= -178 && vars.PlayerZ <= -135 && vars.PlayerY <= 20) {
             return true;
         }
+    	if((vars.PlayerX >= 280 && vars.PlayerZ >= -208 && vars.PlayerZ <= -206)) {
+    	    return true;
+    	}
     }
 }
 
