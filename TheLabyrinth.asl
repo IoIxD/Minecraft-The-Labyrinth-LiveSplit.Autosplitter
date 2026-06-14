@@ -41,7 +41,7 @@ init {
 
         vars.splits = new Dictionary<string, Func<bool>>()
         {
-            {"Checkpoint2",  () => vars.PlayerX >= 276 && vars.PlayerX <= 278 && vars.PlayerZ >= -101 && vars.PlayerZ <= -94 && vars.PlayerY <= 20},
+            {"Checkpoint2",  () => (vars.PlayerX >= 276 && vars.PlayerX <= 278 && vars.PlayerZ >= -101 && vars.PlayerZ <= -94 && vars.PlayerY <= 20) || (vars.PlayerX >= 189 && vars.PlayerX <= 260 && vars.PlayerZ >= -119 && vars.PlayerZ <= -94)},
             {"Checkpoint3",  () => vars.PlayerX >= 234 && vars.PlayerX <= 259 && vars.PlayerZ >= -83 && vars.PlayerZ <= -80},
             {"Checkpoint4",  () => vars.PlayerX >= 236 && vars.PlayerX <= 283 && vars.PlayerZ >= -41 && vars.PlayerZ <= -38},
             {"Checkpoint5",  () => vars.PlayerX >= 300 && vars.PlayerX <= 312 && vars.PlayerZ >= -67 && vars.PlayerZ <= -59},
